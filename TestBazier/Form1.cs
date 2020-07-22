@@ -51,12 +51,24 @@ namespace TestBazier
         {
             if (e.Button != MouseButtons.Left)
                 return;
+
+            // 拖动中心点、前控制点、后控制点
             foreach (var p in _points)
             {
-                if (p.HitPart == BazierPointPart.None)               continue;
-                if (p.HitPart == BazierPointPart.Point)              p.Point = e.Location;
-                else if (p.HitPart == BazierPointPart.PrevControl)   p.PrevControl = e.Location;
-                else if (p.HitPart == BazierPointPart.NextControl)   p.NextControl = e.Location;
+                if (p.HitPart == BazierPointPart.None)
+                    continue;
+                if (p.HitPart == BazierPointPart.Point)
+                {
+                    var dx = e.Location.X - p.Point.X;
+                    var dy = e.Location.Y - p.Point.Y;
+                    p.Point = e.Location;
+                    p.PrevControl = new PointF(p.PrevControl.X + dx, p.PrevControl.Y + dy);
+                    p.NextControl = new PointF(p.NextControl.X + dx, p.NextControl.Y + dy);
+                }
+                else if (p.HitPart == BazierPointPart.PrevControl) 
+                    p.PrevControl = e.Location;
+                else if (p.HitPart == BazierPointPart.NextControl) 
+                    p.NextControl = e.Location;
             }
 
             Refresh();
