@@ -1,0 +1,10 @@
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\bin\Debug\TestBazier.exe.config
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\bin\Debug\TestBazier.exe
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\bin\Debug\TestBazier.pdb
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.Form1.resources
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.Properties.Resources.resources
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.exe
+\\Mac\Home\Downloads\Dev\TestWinForms-github\TestBazier\obj\Debug\TestBazier.pdb

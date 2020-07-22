@@ -1,10 +1,14 @@
-# Windows form 示例项目
+# Windows form demo
 
 
-- Drag 拖拽控件或文件
+- Drag control or drag file
 
 ![](./Doc/drag.gif)
 
-- Curve
+- Draw curve
 
 ![](./Doc/curve.png)
+
+- Draw bazier spline and interope with mouse
+
+![](./Doc/bazier.gif)

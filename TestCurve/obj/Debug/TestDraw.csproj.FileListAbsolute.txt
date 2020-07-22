@@ -1,0 +1,10 @@
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\bin\Debug\TestDraw.exe.config
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\bin\Debug\TestDraw.exe
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\bin\Debug\TestDraw.pdb
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.csprojAssemblyReference.cache
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.Form1.resources
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.Properties.Resources.resources
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.csproj.GenerateResource.cache
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.exe
+\\Mac\Home\Downloads\Dev\TestWinforms\TestDraw\TestDraw\obj\Debug\TestDraw.pdb

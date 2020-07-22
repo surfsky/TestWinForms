@@ -1,0 +1,62 @@
+﻿    public class BazierSegment
+    {
+        public BazierPoint Begin { get; set; }
+        public BazierPoint End { get; set; }
+
+        public BazierSegment(PointF begin, PointF beginCtrl, PointF end, PointF endCtrl)
+        {
+            this.Begin = new BazierPoint(begin, beginCtrl);
+            this.End   = new BazierPoint(end, endCtrl);
+        }
+    }
+
+
+    
+        public static void DrawBar(Graphics g, PointF pt1, PointF pt2, Color color)
+        {
+            using (Pen pen = new Pen(color))
+                g.DrawLine(pen, pt1, pt2);
+        }
+
+                /// <summary>绘制一段贝塞尔曲线</summary>
+        public static void DrawBazier(Graphics g, BazierPoint p1, BazierPoint p2, Pen pen)
+        {
+        }
+
+            Painter.DrawHandler(g, _seg.Begin.Point, _red, false);
+            Painter.DrawHandler(g, _seg.End.Point, _red, false);
+
+            // handler
+            Painter.DrawBar(g, _seg.Begin.Point, _seg.Begin.ControlPoint, _green);
+            Painter.DrawHandler(g, _seg.Begin.ControlPoint, _green, false);
+
+            //
+            Painter.DrawBar(g, _seg.End.Point, _seg.End.ControlPoint, _green);
+            Painter.DrawHandler(g, _seg.End.ControlPoint, _green, false);
+
+            
+            if (_target != null)
+                Painter.DrawDot(g, _target.NextControl, _green, true);
+            var rectBegin = new RectangleF(_seg.Begin.ControlPoint, SizeF.Empty);
+            var rectEnd = new RectangleF(_seg.End.ControlPoint, SizeF.Empty);
+            rectBegin.Inflate(5, 5);
+            rectEnd.Inflate(5, 5);
+
+            if (rectBegin.Contains(e.Location))
+                _target = _seg.Begin;
+            if (rectEnd.Contains(e.Location))
+                _target = _seg.End;
+            if (_target != null)
+                Painter.DrawBazierPoint(g, _target, Color.Red);
+
+
+                        /// <summary>绘制贝塞尔曲线控制点</summary>
+        public static void DrawBazierPoint(Graphics g, BazierPoint p, Color color)
+        {
+            var pen = new Pen(color);
+            g.DrawLine(pen, p.Point, p.PrevControl);
+            g.DrawLine(pen, p.Point, p.NextControl);
+            DrawDot(g, p.Point, color, false);
+            DrawDot(g, p.PrevControl, color, false);
+            DrawDot(g, p.NextControl, color, false);
+        }
